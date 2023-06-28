@@ -195,4 +195,48 @@
     clip-path: var(--clip-path-3);
 }
 
+.news-card :is(.card-meta-list, .card-meta-item){
+    display: flex;
+    align-items: center;
+}
+
+.news-card .card-meta-list {
+    flex-wrap: wrap;
+    gap: 5px 10px;
+}
+
+.news-card .card-meta-item {
+    gap: 5px;
+}
+
+.news-card .card-meta-item ion-icon {
+    color: var(--text-purple);
+}
+
+.news-card .card-meta-text,
+.news-card .link {
+    color: var(--text-champagne-pink);
+    font-size: var(--fontSize-7);
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+}
+
+.news-card .h3 {margin-block: 15px 10px;}
+
+.news-card .card-title {
+    display: inline;
+    background-image: linear-gradient(to left, var(--bg-purple), var(--bg-purple));
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0% 4px;
+    transition: var(--transition-2);
+}
+
+.news-card .card-title:hover,
+.news-card .card-title:focus-visible {
+    background-size: 100% 4px;
+}
+
+
+
 
