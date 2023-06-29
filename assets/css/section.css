@@ -237,6 +237,29 @@
     background-size: 100% 4px;
 }
 
+.news-card .link{
+    max-width: max-content;
+    margin-block-start: 15px;
+    padding-inline-start: 30px;
+    transition: var(--transition-1);
+}
+
+.news-card .link::before {
+    top: 50%;
+    left: 0;
+    transform: translateY(-100%);
+    width: 20px;
+    height: 4px;
+    background-color: var(--bg-purple);
+}
+
+
+.news-card .link:hover,
+.news-card .link:focus-visible {
+  color: var(--text-purple);
+}
+
+
 
 
 
