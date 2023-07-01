@@ -13,8 +13,6 @@
     position: absolute;
 }
 
-.title {
-}
 
 .h1, .h3 {
     line-height: 1.3;
@@ -69,4 +67,20 @@
 
 .w-100{
     width: 100%;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transition: var(--transition-2);
+}
+
+[data-reveal="left"] { transform: translateX(-20px); }
+
+[data-reveal="right"] { transform: translateX(20px); }
+
+[data-reveal="bottom"] { transform: translateY(20px); }
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translate(0);
 }
