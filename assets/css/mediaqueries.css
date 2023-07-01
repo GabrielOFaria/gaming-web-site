@@ -1,0 +1,36 @@
+/* Responsive for large than 575px screen */
+
+@media screen and (min-width: 575px) {
+    /* REUSED STYLE */
+
+    .container {
+        max-width: 540px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    /* HEADER */
+
+    .header .logo img {
+        width: 160px;
+    }
+
+    /* UPCOMMING */
+
+    .upcoming-card.left .card-meta {
+        left: auto;
+        right: -15%;
+    }
+
+    .upcoming-card.right .card-meta {
+        left: 25%;
+    }
+
+
+
+    /* FOOTER */
+
+    .footer-top .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
